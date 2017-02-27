@@ -32,6 +32,8 @@ Consider the following thought experiment as one way to simulate recombination e
   
 ```{r simulation_function, include=FALSE}
 getSimulationList <- function(){
+        # set.seed for reproducible results
+        set.seed(76107)
         for(j in 1:length(cMs)){
                 # paramater set up:
                 zeros <- rep.int(0,100-cMs[j])
